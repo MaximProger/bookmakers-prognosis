@@ -1,3 +1,7 @@
+body.active {
+    overflow: hidden;
+}
+
 /* text-prognosis */
 .text-prognosis {
     padding-top: 5px !important;
@@ -395,4 +399,290 @@
     line-height: 140%;
     text-align: center;
     color: #838FC0;
+}
+
+/* Banner */
+.bookmakers-banner--prognosis {
+    padding: 30px 25px;
+    background: url('../img/prognosis/banner__bg.png') no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bookmakers-banner__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bookmakers-banner__item:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 145px;
+    margin-right: 28px;
+
+}
+
+.bookmakers-banner__item:first-child img {
+    margin-right: 21px;
+}
+
+.bookmakers-banner__item:nth-child(2) {
+    margin-right: 25px;
+}
+
+.bookmakers-banner__item:nth-child(3) {
+    max-width: 187px;
+    margin-right: 8px;
+}
+
+.bookmakers-banner__item:nth-child(5) {
+    margin-left: 30px;
+}
+
+.bookmakers-banner__item__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bookmakers-banner__coef__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bookmakers-banner__coef__right img {
+    margin-right: 4px;
+}
+
+.bookmakers-banner__coef__left {
+    margin-right: 17px;
+}
+
+.bookmakers-banner__coef__left span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.banner__btn {
+    width: 142px;
+    margin-bottom: 7px;
+}
+
+/* prognostic__modal */
+.prognostic__modal {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1036;
+    background: #1f223b;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.prognostic__modal.active {
+    display: block;
+}
+
+.prognostic__modal__head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background: #282F4D;
+}
+
+.prognostic__modal__head button {
+    background: none;
+    border: none;
+    background: url('../img/prognosis/modal__close.svg') no-repeat center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.prognostic__modal__head button:hover {
+    opacity: 0.7;
+}
+
+.prognostic__modal__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+}
+
+.prognostic__modal__item__pannel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222844;
+    border-bottom: 2px solid #282f4d;
+    padding: 15px 18px;
+}
+
+.prognostic__modal__item__pannel button {
+    opacity: 0.3;
+    background: none;
+    border: none;
+    background: url('../img/prognosis/modal__btn.svg') no-repeat center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.prognostic__modal__item__pannel button:hover {
+    opacity: 0.7;
+}
+
+.prognostic__modal__item.active .prognostic__modal__item__pannel button {
+    background: url('../img/prognosis/modal__btn--active.svg') no-repeat center;
+    opacity: 1;
+}
+
+.prognostic__modal__item__line {
+    padding: 15px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .prognostic__modal__item__line .prognostic__modal__item__line__item:nth-child(2) {
+//     text-align: center;
+// }
+
+// .prognostic__modal__item__line .prognostic__modal__item__line__item:last-child {
+//     text-align: right;
+// }
+
+.prognostic__modal__item__line__item {
+    width: 32%;
+    padding: 10px 0;
+    border-bottom: 1px solid #2d3454;
+    border-top: 1px solid #2d3454;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prognostic__modal__item__line__value {
+    padding: 7px 8px;
+    background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.prognostic__modal__item__line__value.blue {
+    background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognostic__modal__item__line__wrapper {
+    display: none;
+}
+
+.prognostic__modal__item.active .prognostic__modal__item__line__wrapper  {
+    display: block;
+}
+
+.prognostic__modal__wrapper {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.prognostic__modal__wrapper::-webkit-scrollbar { width: 3px; height: 3px;}
+.prognostic__modal__wrapper::-webkit-scrollbar-button {  background-color: #14192f; }
+.prognostic__modal__wrapper::-webkit-scrollbar-track {  background-color: #999;}
+.prognostic__modal__wrapper::-webkit-scrollbar-track-piece { background-color: #14192f;}
+.prognostic__modal__wrapper::-webkit-scrollbar-thumb { height: 30px; background-color: #838fc0;}
+.prognostic__modal__wrapper::-webkit-scrollbar-corner { background-color: #999;}
+.prognostic__modal__wrapper::-webkit-resizer { background-color: #666;}
+
+/* White theme */
+.prognostic__modal.white-theme {
+    background: #c0c2ca;
+    color: #131529;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__head {
+    background: #fff;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__pannel {
+    background: #eeeff5;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__pannel {
+    border-color: #fff;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__pannel button {
+    opacity: 1;
+    background: url('../img/prognosis/modal__btn--white.svg') no-repeat center;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__line {
+    background: #f6f7f9;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__line__item {
+    background: #f6f7f9;
+    border-color: #e9eaef;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__item__line__value {
+    color: #fff;
+}
+
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar { width: 3px; height: 3px;}
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar-button {  background-color: #F6F7F9; }
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar-track {  background-color: #999;}
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar-track-piece { background-color: #F6F7F9;}
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar-thumb { height: 30px; background-color: #838FC0;}
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-scrollbar-corner { background-color: #999;}
+.prognostic__modal.white-theme .prognostic__modal__wrapper::-webkit-resizer { background-color: #666;}
+
+.prognosis__list.white-theme {
+    color: #303244;
+    background: #EEEFF5;
+}
+
+.prognosis__list.white-theme .prognosis__line:nth-child(2n) {
+    background: #F6F7F9;
+}
+
+.prognosis__list.white-theme .prognosis__item__letter {
+    color: white;
+    background: #00A2B5;
+}
+
+.prognosis__list.white-theme .prognosis__item__letter.green {
+    background: #8226B7;
+}
+
+.prognosis__list.white-theme .prognosis__progressbar {
+    background: linear-gradient(0deg, #D0D2DD, #D0D2DD), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__list.white-theme .prognosis__progress {
+    background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__list.white-theme .prognosis__progress.green {
+    background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__list.white-theme .prognosis__line--country .prognosis__line__text {
+    color: #303244;
 }
