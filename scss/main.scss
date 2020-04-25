@@ -1,0 +1,398 @@
+/* text-prognosis */
+.text-prognosis {
+    padding-top: 5px !important;
+
+}
+
+.prognosis__prognos {
+    padding-bottom: 15px !important;
+}
+
+// Intro
+.intro__inner {
+    position: relative;
+    background: url('../img/prognosis/intro__bg.png') no-repeat center;
+    width: 100%;
+    height: 417px;
+    padding-top: 18px;
+}
+
+.intro__top {
+    width: 100%;
+    // position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro__icon {
+    margin-left: 30px;
+}
+
+.intro__btn {
+    width: 207px;
+    margin-right: 30px;
+}
+
+.intro__middle {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    top: 95px;
+    left: 174px;
+}
+
+.intro__middle__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__middle__text {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.intro__middle__item--special {
+    text-align: center;
+    margin: 0 80px;
+}
+
+.intro__tite {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.intro__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.intro__bottom {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__bottom__item {
+    padding: 7px 12px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(13, 15, 34, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.intro__bottom__item:nth-child(2) {
+    margin: 0 56px;
+}
+
+/* text-prognosis */
+.text-prognosis h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+}
+
+.text-prognosis h3 {
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.text-prognosis__analisys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* prognosis__list */
+.prognosis__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    transition: all .1s ease-in;
+    z-index: 1;
+}
+
+.prognosis__line:hover {
+    box-shadow: 0 0 20px #000;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    transform: scale(1);
+}
+
+.prognosis__line--progress {
+    padding: 22px 0;
+}
+
+.prognosis__line:nth-child(2n) {
+    background: #1B213B;
+}
+
+.prognosis__item__wrapper {
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prognosis__line__text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.prognosis__item__inner {
+    width: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.prognosis__item__inner .prognosis__item:last-child {
+    margin-left: 110px;
+}
+
+.prognosis__item {
+    display: flex;
+    align-items: center;
+}
+
+.prognosis__item__letter {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #D80027;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.prognosis__item__letter.green {
+    background: #3BBA40;
+}
+
+.prognosis__item .prognosis__item__letter:last-child {
+    margin-right: 0;
+}
+
+.prognosis__item__letter span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.prognosis__item__img {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.prognosis__line--country .prognosis__item__inner .prognosis__item:last-child {
+    margin-left: 180px;
+}
+
+.prognosis__line--country .prognosis__line__text {
+    color: #838FC0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* prognosis__progressbar */
+.prognosis__progressbar {
+    width: 144px;
+    // height: 8px;
+    background: linear-gradient(0deg, #3D4360, #3D4360), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    border-radius: 100px;
+    margin-right: 13px;
+}
+
+.prognosis__progress {
+    display: block;
+    border-radius: 100px;
+    height: 8px;
+    transition: width 500ms ease-in-out;
+    background: linear-gradient(0deg, #D80027, #D80027), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__progress.green {
+    background: linear-gradient(0deg, #3BBA40, #3BBA40), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__progress.blue {
+    background: linear-gradient(0deg, #1D74DC, #1D74DC), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__line--fraction--1 .prognosis__item__inner .prognosis__item:last-child {
+    margin-left: 90px;
+}
+
+.prognosis__line--fraction--2 .prognosis__item__inner .prognosis__item:last-child {
+    margin-left: 97px;
+}
+
+.prognosis__line--big {
+    padding: 0;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.prognosis__line--big .prognosis__line__text {
+    width: 50%;
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-bottom: 23px;
+}
+
+.prognosis__line--big .prognosis__text__total {
+    width: 50%;
+    padding-top: 23px;
+    padding-right: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00A2B5;
+}
+
+.prognosis__text__total {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 162, 181, .1)
+}
+
+.prognosis__text__total__wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.prognosis__text__total__wrapper span {
+    margin-right: 2px;
+}
+
+/* prognosis__recomended */
+.prognosis__recomended {
+    background: linear-gradient(0deg, #282F4D, #282F4D), #0D0F22;
+    border-left: 3px solid  #8226B7;
+    border-radius: 2px;
+    margin-top: 5px !important;
+}
+.prognosis__recomended h2 {
+    font-size: 20px;
+    line-height: 140%;
+}
+.prognosis__blockqoute {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 15px 23px 22px;
+    background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    border-radius: 10px 10px 10px 2px;
+}
+
+.prognosis__recomended__footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prognosis__recomended__footer__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prognosis__recomended__footer__author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-right: 33px;
+}
+.prognosis__recomended__footer__author img {
+    margin-bottom: 0;
+    margin-right: 11px;
+}
+
+.prognosis__recomended__footer__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.prognosis__recomended__footer__btn__wrapper {
+    margin-left: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.prognosis__recomended__footer__btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 140%;
+    color: #fff;
+    padding: 6px 12px;
+    background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    border-radius: 2px 0px 0px 2px;
+    transition: all .2s linear;
+}
+
+.prognosis__recomended__footer__btn:hover {
+    text-decoration: none;
+    background: linear-gradient(0deg, #01C3DA, #01C3DA), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+.prognosis__recomended__footer__btn.blue {
+    background: linear-gradient(0deg, #01C3DA, #01C3DA), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.prognosis__recomended__footer__btn.blue:hover {
+    background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+}
+
+/* prognosis__info */
+.prognosis__info  {
+    margin-top: 0 !important;
+}
+.prognosis__info h2 {
+    font-size: 20px;
+    line-height: 140%;
+}
+
+/* prognosis__stream */
+.prognosis__stream {
+    margin-top: 25px;
+} 
+
+.prognosis__stream__text {
+    margin-top: 19px;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #838FC0;
+}
