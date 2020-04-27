@@ -717,6 +717,10 @@ body.active {
 }
 
 @media (max-width: 767px) {
+
+    .container--prognosis {
+        padding: 0;
+    }
     
     .intro__btn--desktop {
         display: none;
@@ -731,7 +735,7 @@ body.active {
     }
 
     .intro__btn--mobile {
-        display: block;
+        display: flex;
         width: 100%;
         border-radius: 0;
     }
@@ -772,6 +776,11 @@ body.active {
         width: 85px;
     }
 
+    .prognosis__stream {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .prognosis__stream__video {
         height: 193px;
     }
@@ -805,6 +814,11 @@ body.active {
 
     .prognosis__item__inner {
         width: auto;
+    }
+
+    .prognosis__item__wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .prognosis__line--country .prognosis__item__inner .prognosis__item:last-child {
@@ -939,7 +953,7 @@ body.active {
     }
 
     .bookmakers-banner__item:first-child {
-        width: 50%;
+        width: 55%;
         margin-right: 0;
     }
 
@@ -951,18 +965,18 @@ body.active {
 
     .bookmakers-banner__item:nth-child(2) {
         margin-right: 0px;
-        width: 50%;
+        width: 40%;
     }
 
     .bookmakers-banner__item:nth-child(3) {
         margin-top: 26px;
-        width: 50%;
+        width: 55%;
         margin-right: 0;
     }
 
     .bookmakers-banner__item:nth-child(4) {
         margin-top: 26px;
-        width: 50%;
+        width: 40%;
     }
 
     .bookmakers-banner__item:nth-child(5) {
@@ -998,7 +1012,26 @@ body.active {
         line-height: 14px;
     }
 
+    .prognosis__info  {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 
+    // .prognosis__recomended {
+    //     position: relative;
+    //     z-index: 1;
+    // }
+    // .prognosis__recomended__bg {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: -30px;
+    //     background: linear-gradient(0deg, #282F4D, #282F4D), #0D0F22;
+    //     width: 767px;
+    //     height: 100%;
+    //     z-index: -1;
+    //     // border-left: 3px solid #8226b7;
+    // }
 
 
 }
@@ -1011,20 +1044,5 @@ body.active {
     .intro__middle__img {
         width: 80px;
         height: 80px;
-    }
-
-    .prognosis__recomended {
-        position: relative;
-        z-index: 1;
-    }
-    .prognosis__recomended__bg {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -30px;
-        background: linear-gradient(0deg, #282F4D, #282F4D), #0D0F22;
-        width: 767px;
-        height: 100%;
-        z-index: -1;
     }
 }
