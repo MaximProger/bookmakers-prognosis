@@ -1547,16 +1547,25 @@
                   
                
 				<div class="intro">
+					<a href="#" class="bookmakers-list__button btn__hover_new button button_primary intro__btn intro__btn--mobile">Коэффициенты на матч</a>
 					<div class="intro__inner">
 
 								<div class="intro__top">
-									<p class="intro__text">
+									<p class="intro__text no-xs">
 										<img src="./img/prognosis/intro__soccer.svg" alt="Soccer" class="intro__icon">
 										<span>Чемпионат мира по футболу 2020</span>
 										<img src="./img/prognosis/intro__location.svg" alt="Location" class="intro__icon">
 										<span>Лозанна, Швейцария</span>
-										</p>
-										<a href="#" class="bookmakers-list__button btn__hover_new button button_primary intro__btn">Коэффициенты на матч</a>
+									</p>
+									<p class="intro__text no-xl xs">
+										<img src="./img/prognosis/intro__soccer.svg" alt="Soccer" class="intro__icon">
+										<span>Чемпионат мира по футболу 2020</span>
+									</p>
+									<p class="intro__text no-xl xs">
+										<img src="./img/prognosis/intro__location.svg" alt="Location" class="intro__icon">
+										<span>Лозанна, Швейцария</span>
+									</p>
+										<a href="#" class="bookmakers-list__button btn__hover_new button button_primary intro__btn intro__btn--desktop">Коэффициенты на матч</a>
 									</div>
 								<div class="intro__middle">
 									<div class="intro__middle__item wow fadeInLeft">
@@ -1591,7 +1600,7 @@
                 
                 
 				<div class="prognosis__stream">
-					<iframe src="https://player.twitch.tv/?channel=xboct&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no" height="492" width="100%"></iframe>
+					<iframe src="https://player.twitch.tv/?channel=xboct&autoplay=false" frameborder="0" allowfullscreen="true" scrolling="no" class="prognosis__stream__video"></iframe>
 					<p class="prognosis__stream__text">Трансляция ЧМ-2020 по футболу: Россия – Бельгия</p>
 					</div>
 
@@ -1610,7 +1619,7 @@
 					</div>
 
 </div>
-<div class="prognosis__list white-theme wow fadeInUp">
+<div class="prognosis__list wow fadeInUp">
 
 	<div class="prognosis__line prognosis__line--country">
 		<div class="prognosis__item__wrapper">
@@ -1740,13 +1749,15 @@
 					<div class="prognosis__progressbar">
 						<span class="prognosis__progress green" style="width: 66%;"></span>
 					</div>
-					<span>5/6</span>
+					<span class="no-xs">5/6</span>
+					<span class="no-xl xs">12/4</span>
 				</div>
 				<div class="prognosis__item">
 					<div class="prognosis__progressbar">
 						<span class="prognosis__progress green" style="width: 27%;"></span>
 					</div>
-					<span>2/0</span>
+					<span class="no-xs">2/0</span>
+					<span class="no-xl xs">15/8</span>
 				</div>
 			</div>
 			</div>
@@ -1760,13 +1771,15 @@
 					<div class="prognosis__progressbar">
 						<span class="prognosis__progress blue" style="width: 36%;"></span>
 					</div>
-					<span>3</span>
+					<span class="no-xs">4</span>
+					<span class="no-xl xs">3</span>
 				</div>
 				<div class="prognosis__item">
 					<div class="prognosis__progressbar">
 						<span class="prognosis__progress green" style="width: 40%;"></span>
 					</div>
-					<span>2.4</span>
+					<span class="no-xs">2.4</span>
+					<span class="no-xl xs">3</span>
 				</div>
 			</div>
 			</div>
@@ -1774,7 +1787,8 @@
 
 		<div class="prognosis__line prognosis__line--progress">
 		<div class="prognosis__item__wrapper">
-			<span class="prognosis__line__text">Количество голов в среднем</span>
+			<span class="prognosis__line__text no-xs">Количество голов в среднем</span>
+			<span class="prognosis__line__text xs no-xl">Ср. кол-во голов</span>
 			<div class="prognosis__item__inner">
 				<div class="prognosis__item">
 					<div class="prognosis__progressbar">
@@ -1794,7 +1808,8 @@
 
 		<div class="prognosis__line prognosis__line--progress">
 		<div class="prognosis__item__wrapper">
-			<span class="prognosis__line__text">Количество голов в личных встречах</span>
+			<span class="prognosis__line__text no-xs">Количество голов в личных встречах</span>
+			<span class="prognosis__line__text no-xl xs">Кол-во голов <span style="color: #838FC0">(ЛВ)</span></span>
 			<div class="prognosis__item__inner">
 				<div class="prognosis__item">
 					<div class="prognosis__progressbar">
@@ -1806,14 +1821,16 @@
 					<div class="prognosis__progressbar">
 						<span class="prognosis__progress" style="width: 40%;"></span>
 					</div>
-					<span>2.4</span>
+					<span class="no-xs">2.4</span>
+					<span class="no-xl xs">2</span>
 				</div>
 			</div>
 			</div>
 		</div>
 
 		<div class="prognosis__line prognosis__line--big">
-			<span class="prognosis__line__text">Рекамендуемый прогноз</span>
+			<span class="prognosis__line__text no-xs">Рекамендуемый прогноз</span>
+			<span class="prognosis__line__text no-xl xs">Рекамендуем</span>
 			<div class="prognosis__text__total">
 				<div class="prognosis__text__total__wrapper">
 					<span>Тотал больше 2.5 </span><img src="./img/prognosis/arrow.svg" alt="Arrow">
@@ -1826,7 +1843,8 @@
 
 	<div class="post text-block text-prognosis prognosis__recomended text-block-forecast wow fadeInUp">
 
-		<h2>Рекомендованный прогноз на матч ЧМ по футболу 2020: Росссия - Бельгия</h2>
+		<div class="prognosis__recomended__wrapper">
+			<h2>Рекомендованный прогноз на матч ЧМ по футболу 2020: Росссия - Бельгия</h2>
 		<p>А вот «Рыцарям Татры» до схватки с одной из сильнейших хоккейных сборных мира предстоит встретиться с датчанами, британцами и белорусами. Так что вполне возможно, что сборная Словакии подойдет к середине предварительного этапа с максимальным запасом очков. И данный гандикап ей точно не помешает перед встречами с представителями «большой шестерки». Но все же далеко не факт, что хороший старт станет для девятой команды мирового рейтинга ИИХФ гарантией попадания в четверку лучших группы A.</p>
 		<p>Если же «Рыцарям Татры» удастся отнять хотя бы несколько очков у шведов, канадцев и чехов, то они почти гарантированно выйдут в плей-офф. Но только в случае удачного выступления с равными по силе коллективами и аутсайдерами своей восьмерки.</p>
 		<p class="prognosis__blockqoute">Высока вероятность, что поединок не продлиться больше 2-х минут. Если же «Рыцарям Татры» удастся отнять хотя бы несколько очков у шведов, канадцев и чехов, то они почти гарантированно выйдут в плей-офф. Но только в случае удачного выступления с равными по силе коллективами и аутсайдерами своей восьмерки.</p>
@@ -1837,7 +1855,7 @@
 						<img src="./img/prognosis/comment__logo.png" alt="Author">
 						<span>Александр Михайловский</span>
 					</div>
-					<span>Прогноз от эксперта</span>
+					<span class="prognosis__recomended__footer__prog">Прогноз от эксперта</span>
 				</div>
 				<div class="prognosis__recomended__footer__right">
 					<span>Ставка сыграет?</span>
@@ -1847,6 +1865,7 @@
 					</div>
 				</div>
 				</div>
+		</div>
 		</div>
 	</div>
 <div class="post text-block text-prognosis prognosis__info text-block-forecast wow fadeInUp">
@@ -1942,7 +1961,7 @@
 					</div>
 				  </div>
 
-				  <div class="prognostic__modal white-theme" id="prognosticModal">
+				  <div class="prognostic__modal wow slideInDown" id="prognosticModal">
 						<div class="container">
 							<div class="prognostic__modal__head">
 							<h2 class="prognostic__modal__title">Коэффициенты </h2>
