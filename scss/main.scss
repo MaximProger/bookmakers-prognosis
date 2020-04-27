@@ -943,6 +943,8 @@ body.active {
 
     .bookmakers-banner--prognosis {
         /* padding: 30px 25px; */
+        max-width: 348px;
+        margin: 0 auto;
         background: url(../img/prognosis/banner__bg--mobile.png) no-repeat center;
     }
 
