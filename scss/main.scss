@@ -97,7 +97,19 @@ body.active {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     border-radius: 2px;
+    transition: all .2s linear;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
+
+.intro__bottom__item:hover {
+    color: #000;
+    background: #FFFFFF;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
 
 .intro__bottom__item:nth-child(2) {
     margin: 0 56px;
@@ -700,7 +712,12 @@ body.active {
     display: none;
 }
 
+.prognosis__recomended__bg {
+    display: none;
+}
+
 @media (max-width: 767px) {
+    
     .intro__btn--desktop {
         display: none;
     }
@@ -801,15 +818,13 @@ body.active {
     .prognosis__item__letter {
         width: 20px;
         height: 20px;
-        background: #d80027;
         margin-right: 4px;
-        background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), linear-gradient(0deg, #2E3658, #2E3658), #0D0F22;
+        // background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), linear-gradient(0deg, #2E3658, #2E3658), #0D0F22;
     }
 
-    .prognosis__item__letter.green {
-        background: #3bba40;
-        background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), linear-gradient(0deg, #2E3658, #2E3658), #0D0F22;
-    }
+    // .prognosis__item__letter.green {
+    //     background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), linear-gradient(0deg, #2E3658, #2E3658), #0D0F22;
+    // }
 
     .prognosis__progressbar {
         width: 90px;
@@ -835,13 +850,13 @@ body.active {
         line-height: 20px;
     }
 
-    .prognosis__progress {
-        background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
-    }
+    // .prognosis__progress {
+    //     background: linear-gradient(0deg, #8226B7, #8226B7), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    // }
 
-    .prognosis__progress.green {
-        background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
-    }
+    // .prognosis__progress.green {
+    //     background: linear-gradient(0deg, #00A2B5, #00A2B5), linear-gradient(90deg, #01C3DA 0%, #8226B7 100%), linear-gradient(90deg, #75CCD5 0%, #2C319E 100%), #0D0F22;
+    // }
 
     .prognosis__line--big .prognosis__line__text {
         padding-left: 15px;
@@ -996,5 +1011,20 @@ body.active {
     .intro__middle__img {
         width: 80px;
         height: 80px;
+    }
+
+    .prognosis__recomended {
+        position: relative;
+        z-index: 1;
+    }
+    .prognosis__recomended__bg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -30px;
+        background: linear-gradient(0deg, #282F4D, #282F4D), #0D0F22;
+        width: 767px;
+        height: 100%;
+        z-index: -1;
     }
 }
